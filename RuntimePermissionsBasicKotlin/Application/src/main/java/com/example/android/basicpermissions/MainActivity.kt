@@ -104,9 +104,9 @@ class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRes
     private fun requestCameraPermission() {
         // Permission has not been granted and must be requested.
         if (shouldShowRequestPermissionRationaleCompat(Manifest.permission.CAMERA)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // Display a SnackBar with a button to request the missing permission.
+//            // Provide an additional rationale to the user if the permission was not granted
+//            // and the user would benefit from additional context for the use of the permission.
+//            // Display a SnackBar with a button to request the missing permission.
             layout.showSnackbar(R.string.camera_access_required,
                     Snackbar.LENGTH_INDEFINITE, R.string.ok) {
                 requestPermissionsCompat(arrayOf(Manifest.permission.CAMERA),
